@@ -14,4 +14,11 @@ a{
 .footerblock{
     background: purple;
     height: 300px;
+    color: white;
+}
+.url{
+    color: white;
+}
+.urls{
+    color: white;
 }

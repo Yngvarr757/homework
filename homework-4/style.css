@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.bigdisplay {
+    overflow: auto;
+    display: block;
+    background: rgb(147, 145, 198);
+    height: 500px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: solid 1px navy;
+}
+
+.miniblock {
+    display: inline-block;
+    width: 220px;
+    height: 190px;
+    background: rgb(167, 143, 98);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+}

@@ -1,0 +1,219 @@
+body {
+    background: #181E34;
+    font-size: 16px;
+    line-height: 150%;
+    color: white;
+    font-family: "Montserrat", "Arial", sans-serif;
+
+}
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+/* ==================================================== */
+.header-inner {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    margin: 30px 0 36px;
+}
+
+.header-nav {
+    margin-left: auto;
+}
+
+.header-list {
+    display: flex;
+
+}
+
+.header-item {
+    margin-right: 30px;
+}
+
+.header-button {
+    background: white;
+    border-radius: 100px;
+    color: #2766ae;
+    padding: 14px 30px;
+    width: 113px;
+    height: 48px;
+    font-weight: 500;
+}
+
+/* ============ HERO(MAIN) ================ */
+
+.hero {
+
+    height: 508px;
+    background: url("/images/картинка.jpg") 0 50% / cover no-repeat;
+
+}
+
+.container {}
+
+.hero-title {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.hero-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-text {
+    width: 436px;
+    height: 159px;
+    padding-top: 60px;
+}
+
+.hero-text span {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #01a2cb;
+    padding-left: 5px;
+}
+
+#xui {
+    padding-top: 15px;
+}
+
+.hero-buttons {
+    display: grid;
+    flex-direction: row;
+    align-self: center;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 78.5px;
+}
+
+.hero-button {
+    margin: 0px 0 10px 0;
+    border-radius: 100px;
+    padding: 18px 30px;
+    width: 320px;
+    height: 56px;
+    background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
+
+
+}
+
+.hero-button-two {
+    background: linear-gradient(129deg, #00a4cc 0%, #2766ae 100%);
+}
+
+.hero-button img {
+    padding-top: 5px;
+}
+
+/* =========================== MAIN(CARDS) ========================================= */
+
+.cards h2 {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-top: 120px;
+    text-align: center;
+}
+
+#cards-text {
+    text-align: center;
+    padding-top: 20px;
+    width: 570px;
+    margin-left: 160px;
+    margin-bottom: 32px;
+}
+
+
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: 100px; */
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+}
+
+.card {
+    border: 2px solid #176bae;
+    border-radius: 16px;
+    padding: 28px;
+    width: 204px;
+    height: 141px;
+    box-shadow: 4px 4px 13px 0 rgba(5, 13, 41, 0.76);
+    background: #197cb8;
+    margin: 28px 0 0 0;
+}
+
+.card h3 {
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.card p {
+    text-align: center;
+}
+
+.cards-button {
+    display: inline-block;
+    border-radius: 100px;
+    padding: 18px 30px;
+    width: 436px;
+    height: 56px;
+    background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
+    margin: 30px 0 120px 232px;
+    text-align: center;
+}
+
+/*==================== FOOTER =================================*/
+
+.footer {
+    border-top: 1px solid #323952;
+    height: 362px;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.footer-inner h5 {
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+.footer-inner li{
+    margin-top: 10px;
+}
+.footer-stolbik {
+
+}
+.footer-stolbik-one{
+    margin: 60px 117px 60px 0;
+}
+.footer-stolbik-two{
+    margin: 60px 0 128px 0;
+}
+.footer-text {
+    flex-basis: 267px;
+    margin: 60px 197px 142px 0;
+
+}

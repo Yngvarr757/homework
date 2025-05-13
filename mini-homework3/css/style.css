@@ -47,11 +47,11 @@ body {
 /* ================== Выполнение дз ниже =================== */
 
 
-.box:hover .box__scale{
+.box__scale{
     transition: 1s;
     
 }
-.box:hover span{
+span{
     transition: 0.5s 1s;
 }
 

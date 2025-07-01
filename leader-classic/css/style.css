@@ -1,0 +1,1319 @@
+@import "fonts.css";
+@import "reset.css";
+@import "header.css";
+@import "catalog.css";
+@import "tools.css";
+@import "manual.css";
+@import "bonus.css";
+@import "advantages.css";
+@import "portfel.css";
+@import "mobinvest.css";
+@import "ask.css";
+@import "application.css";
+@import "footer.css";
+
+body {
+    background: #0e0e12;
+    font-family: "Gotham Pro", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+    max-width: 1635px;
+    position: relative;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    border-radius: 20px;
+    background: #0e0e12;
+    border: 1px solid #FF8924;
+    color: #fff;
+    width: 100%;
+    transition: .5s;
+}
+
+.button:hover {
+    transition: .5s;
+    background: #fff;
+    border: 1px solid black;
+    color: #0e0e12;
+    box-shadow: 7px 7px 30px 10px rgba(0, 0, 0, 0.564) inset;
+
+}
+
+.perty-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+    background: linear-gradient(57deg, #dc6b30 0%, #e4864f 42.19%, #ffbe82 72.92%, #e49031 100%);
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+
+}
+
+.perty-button:hover {
+    transition: .5s;
+    box-shadow: inset 0 -5px 0 0 #8f4119, 0 3px 49px -3px rgba(226, 128, 72, 0.76);
+
+}
+
+@media (max-width: 1880px) {
+    .manual__list {
+        column-gap: 0px;
+
+    }
+}
+
+@media(max-width: 1740px) {
+    .bonus__present-two {
+        right: -20px;
+    }
+}
+
+@media(max-width: 1580px) {
+    .header__circle-two {
+        left: -350px;
+    }
+
+    .header__raffle {
+        margin-bottom: 35px;
+    }
+
+    .header__title {
+        font-size: 54px;
+    }
+
+    .header__advateges {
+        font-size: 24px;
+    }
+
+    .header__top-button {
+        height: 88px;
+    }
+
+    .header__button-acc {
+        height: 88px;
+    }
+
+    .header__top-inner {
+        margin-bottom: 44px;
+    }
+
+    .header__nav-list {
+        margin-right: auto;
+    }
+
+    .header__nav-list {
+        gap: 60px;
+        margin-left: 40px;
+    }
+
+    .header__circle {
+        max-width: 354px;
+        max-height: 368px;
+        filter: blur(210px);
+    }
+
+    .header__woodhand {
+        max-width: 900px;
+        max-height: 858px;
+        right: -280px;
+        bottom: -200px;
+    }
+
+    .manual__list {
+        grid-row-gap: 100px;
+    }
+
+    .manual__list>:first-child {
+        grid-column: 2 / 3;
+    }
+
+    .manual__list>:nth-child(2) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        justify-self: center;
+        flex-shrink: 0;
+    }
+
+    .manual__list>:nth-child(3) {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+        justify-self: end;
+        width: 507px;
+        height: 389px;
+    }
+
+    .bonus__santa-vr {
+        right: -971px;
+        top: -147px;
+        max-width: 1300px;
+    }
+
+    .bonus__santa-vr-two {
+        right: auto;
+        left: -791px;
+        top: -187px;
+    }
+
+    .bonus__present {
+        top: -300px;
+        right: -40px;
+        max-width: 340px;
+    }
+
+    .bonus__present-two {
+        top: -80px;
+        right: -10px;
+        max-width: 330px;
+    }
+
+    .application__form {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width:1440px) {
+    .header {
+        padding-top: 20px;
+    }
+
+    .header__open-acc {
+        padding: 10px;
+        font-size: 16px;
+        color: #000;
+        height: 61px;
+    }
+
+    .header__login-button {
+        /* flex-shrink: 1; */
+        font-size: 15px;
+        height: 55px;
+    }
+
+    .header__raffle {
+        margin-bottom: 30px;
+    }
+
+    .header__title {
+        font-size: 48px;
+    }
+
+    .header__advateges {
+        font-size: 16px;
+    }
+
+    .header__top-inner {
+        margin-bottom: 35px;
+    }
+
+    .header__nav-list {
+        margin-right: auto;
+    }
+
+    .header__nav-list {}
+
+    .header__circle {
+        max-width: 354px;
+        max-height: 368px;
+        filter: blur(210px);
+    }
+
+    .header__woodhand {
+        max-width: 760px;
+        max-height: 698px;
+        right: -220px;
+        bottom: -105px;
+    }
+
+    .header__circle {
+        max-width: 324px;
+        max-height: 328px;
+    }
+
+    .tools__content {
+        padding: 75px 50px;
+    }
+
+    .tools__content-list {
+        row-gap: 70px;
+    }
+
+    .tools__support {
+        bottom: 45%;
+    }
+
+    .advantages__list {
+        display: grid;
+        grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+        gap: 22px;
+    }
+
+    .portfel__right-title {
+        font-size: 54px;
+    }
+
+    .portfel__right-text {
+        font-size: 21px;
+    }
+
+    .main__portfel {
+        padding-top: 0;
+        padding-bottom: 100px;
+    }
+
+    .portfel__profit-arc {
+        top: 20px;
+    }
+
+    .porfel__left-content {
+        margin-left: 130px;
+    }
+
+    .portfel__info {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        justify-content: space-between;
+    }
+
+    .portfel__punktik:first-child {
+        grid-area: 1 / 1 / 2 / 3;
+        justify-self: start;
+    }
+
+    .portfel__punktik:nth-child(2) {
+        grid-area: 1 / 2 / 2 / -1;
+        justify-self: end;
+    }
+
+    .portfel__punktik:last-child {
+        grid-area: 2 / 1 / 3 / -1;
+    }
+
+    .mobinvest__inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .mobinvest__img img {
+        right: 0px;
+        position: relative;
+
+    }
+
+    .mobinvest__img {
+        height: auto;
+    }
+
+    .mobinvest__text-block {
+        margin-top: 0px;
+    }
+}
+
+@media(max-width: 1350px) {
+    .header__nav-list {
+        gap: 25px;
+    }
+
+    .header__login-button {
+        display: flex;
+        padding: 0 0;
+        max-width: 95px;
+        text-align: center;
+    }
+
+    .header__open-acc {
+        max-width: 234px;
+    }
+
+    .header__top-button {
+        max-width: 348px;
+    }
+
+    .header__button-acc {
+        max-width: 347px;
+
+    }
+
+    .bonus__cirlce {
+        max-width: 333px;
+        max-height: 333px;
+    }
+
+    .bonus__santa-vr {
+        right: -744px;
+        top: -107px;
+        max-width: 1000px;
+    }
+
+    .bonus__santa-vr-two {
+        right: auto;
+        left: -615px;
+        top: -107px;
+        max-width: 1000px;
+    }
+
+    .bonus__present {
+        top: -300px;
+        right: -30px;
+        max-width: 220px;
+    }
+
+    .bonus__present-two {
+        top: -100px;
+        right: -20px;
+        max-width: 260px;
+    }
+
+    .bonus__button {
+        max-width: 330px;
+        height: 85px;
+        font-size: 20px;
+    }
+
+    .bonus__button-demo {
+        max-width: 330px;
+        height: 85px;
+        font-size: 20px;
+    }
+
+    .mobinvest__list {
+        display: grid;
+        grid-template: repeat(2, 1fr)/ repeat(2, 1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobinvest__item {
+        max-width: 100%;
+    }
+
+    .mobinvest__bottom {
+        margin-bottom: 157px;
+    }
+
+    .main__mobinvest {
+        padding-bottom: 151px;
+    }
+}
+
+@media(max-width: 1220px) {
+    .header__nav {
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        left: -20px;
+        top: 89%;
+        gap: 0px;
+        border-radius: 15px;
+        background: #0e0e12;
+        border: 2px solid #753919;
+        width: 170px;
+        height: 220px;
+        z-index: 1;
+        opacity: 0;
+        transition: .6s;
+        transform: translateX(-40%);
+    }
+
+    .header__nav--mob {
+        visibility: visible;
+        opacity: 1;
+        transition: .6s;
+        transform: translateX(0);
+    }
+
+    .header__nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0;
+        transition: .5s;
+    }
+
+    .burger-icon {
+        display: block;
+        order: -1;
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+
+    .burger-icon img {
+        width: 100%;
+    }
+
+    .header__advateges {
+        font-size: 15px;
+    }
+
+    .header__title {
+        font-size: 40px;
+    }
+
+    .header__woodhand {
+        max-width: 640px;
+        max-height: 558px;
+        right: -210px;
+        bottom: -24px;
+    }
+
+    .header__top-button {
+        max-width: 308px;
+        height: 75px;
+        font-size: 20px;
+    }
+
+    .header__button-acc {
+        max-width: 307px;
+        height: 75px;
+    }
+
+    .header__top-button img {
+        position: absolute;
+        right: -21px;
+        top: 12px;
+        width: 69px;
+        height: 64px;
+    }
+
+    .catalog__list {
+        margin-bottom: 80px;
+    }
+
+    .title__text {
+        font-size: 63px;
+        max-width: 765px;
+    }
+
+    .titile__subtitle {
+        font-size: 23px;
+        max-width: 643px;
+    }
+
+    .catalog__item-img {
+        max-width: 124px;
+        height: 124px;
+        padding: 0 5px;
+    }
+
+    .get__catalog-button {
+        height: 86px;
+        font-size: 19px;
+    }
+
+    .get__catalog-text {
+        font-size: 21px;
+        line-height: 158%;
+        text-align: center;
+    }
+
+    .get__catalog-button {
+        height: 76px;
+        max-width: 300px;
+    }
+
+
+    .catalog__content {
+        padding-bottom: 85px;
+    }
+
+    .catalog__company {
+        margin-bottom: 50px;
+    }
+
+    .tools__content {
+        padding: 40px 20px;
+    }
+
+    .tools__content-list {
+        column-gap: 20px;
+    }
+
+
+    .bonus__present-two {
+        top: -4px;
+        right: 17px;
+        max-width: 220px;
+    }
+
+    .bonus__santa-vr {
+        top: -70px;
+    }
+
+    .bonus__santa-vr-two {
+        right: auto;
+        left: -555px;
+        top: -107px;
+        max-width: 900px;
+    }
+
+    .bonus__title {
+        font-size: 55px;
+    }
+
+    .bonus__text {
+        font-size: 22px;
+    }
+
+    .main__bonus {
+        padding-bottom: 105px;
+    }
+
+
+    .portfel__profit-arc>img {
+        width: 100%;
+    }
+
+    .portfel__profit-arc {
+        position: absolute;
+        top: 70px;
+        z-index: 1;
+        width: 120%;
+    }
+
+    .portfel__arc-poloska {
+        width: 24.5%;
+        left: -3.5px;
+        top: 47.4px;
+    }
+
+    .portfel__arc-poloska {
+        left: -3.5px;
+        top: 47.4px;
+    }
+
+    .portfel__arc-poloska img {
+        width: 100%;
+    }
+
+    .portfel__arc-poloska img {
+        width: 100%;
+    }
+
+    .partfel__profit-percent {
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+
+    .partfel__profit-percent {
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+
+    .partfel__profit-riskwrapper {
+        margin-bottom: 25px;
+        padding-top: 5px;
+    }
+
+    .porfel__left-content {
+        margin-left: 90px;
+    }
+
+    .portfel__inner {
+        gap: 100px;
+    }
+
+    .ask__link {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 117%;
+        margin-left: 15px;
+        margin-right: auto;
+    }
+
+    .application__list {
+        /* justify-content: center; */
+        /* align-items: center; */
+        flex-direction: column;
+    }
+
+    .application__list-line {
+        left: auto;
+        right: 0;
+        top: 70px;
+        transform: rotate(90deg);
+    }
+
+    .application__line-dashed {
+        display: none;
+    }
+
+    .application__item:nth-child(3) {
+        align-self: center;
+    }
+
+    .application__item:last-child {
+        align-self: end;
+    }
+
+    .application__list {
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .advantages__list {
+        display: grid;
+        grid-template: repeat(4, auto)/ repeat(2, 1fr);
+        gap: 9px;
+    }
+
+    .advantages__item {
+        padding: 24px 13px 25px 18px;
+        gap: 32px;
+    }
+
+    .advantages__item-details {
+        position: absolute;
+        right: 36px;
+        bottom: auto;
+        top: 20px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .advantages__item-details::after {
+        content: '→';
+        margin-left: 8px;
+        position: absolute;
+    }
+
+    .portfel__inner {
+        flex-wrap: wrap;
+        gap: 160px;
+    }
+
+    .portfel__profit-arc {
+        width: 100%;
+        top: -70px;
+    }
+
+    .portfel__arc-poloska {
+        left: -0.4%;
+        top: 18.4%;
+    }
+
+    .porfel__left-content {
+        margin-left: 0px;
+    }
+
+    .portfel__inner {
+        padding-bottom: 120px;
+    }
+}
+
+@media(max-width:1000px) {
+    .header__raffle {
+        display: grid;
+        grid-template: .1fr 1fr / 1fr .1fr;
+        justify-items: center;
+        gap: 0px;
+        margin-bottom: 20px;
+    }
+
+    .header__raffle::before {
+        border-radius: 0px;
+        inset: -15px -50px -15px -50px;
+    }
+
+    .header__raffle-icon {
+        order: 3;
+        align-self: end;
+    }
+
+    .header__raffle-time {
+        order: 1;
+        grid-column: 1 / -1;
+        margin-left: 0px;
+        justify-self: start;
+        margin-bottom: 10px;
+    }
+
+    .header__raffle-time {
+        font-size: 20px;
+    }
+
+    .header__raffle-time span {
+        font-size: 18px;
+        margin-left: -3px;
+    }
+
+    .header__raffle-text {
+        order: 2;
+    }
+
+    .header__woodhand {
+        max-width: 550px;
+        max-height: 518px;
+        bottom: -14px;
+    }
+
+    .header__top-button img {
+        position: absolute;
+        right: -15px;
+        top: 11px;
+        width: 59px;
+        height: 54px;
+    }
+
+    .header__top-button {
+        max-width: 258px;
+        height: 65px;
+        font-size: 18px;
+    }
+
+    .header__button-acc {
+        max-width: 258px;
+        height: 65px;
+        font-size: 18px;
+    }
+
+    .header__raffle-text {
+        font-size: 18px;
+    }
+
+    .header__raffle::before {
+        inset: -7px -50px -7px -50px;
+    }
+
+    .manual__list {
+        grid-template: auto auto auto / auto;
+        grid-row-gap: 30px;
+
+    }
+
+    .manual__list>:first-child {
+        grid-area: auto;
+    }
+
+    .manual__list>:nth-child(2) {
+        grid-area: auto;
+        justify-self: center;
+        flex-shrink: 0;
+    }
+
+    .manual__list>:nth-child(3) {
+        grid-area: auto;
+        justify-self: end;
+        width: 507px;
+        height: 389px;
+    }
+
+    .bonus__bonus {
+        max-width: 700px;
+        top: -110px;
+        right: -60px;
+    }
+
+    .bonus__cirlce {
+        max-width: 273px;
+        max-height: 273px;
+    }
+
+    .main__manual {
+        padding-bottom: 212px;
+    }
+}
+
+@media (max-width:950px) {
+    .catalog__list {
+        display: none;
+    }
+
+    .swiper {
+        display: block !important;
+
+    }
+
+    .title__text {
+        font-size: 53px;
+    }
+
+    .titile__subtitle {
+        font-size: 21px;
+    }
+
+    .catalog__black-side {
+        display: block;
+    }
+
+    .catalog__black-side-two {
+        display: block;
+    }
+
+    .advantages__title {
+        font-size: 7vw;
+    }
+
+    .ask__content-inner {
+        flex-direction: column;
+    }
+
+    .ask__text {
+        font-size: 22px;
+        line-height: 159%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .ask__inner {
+        display: flex;
+        flex-direction: column;
+        max-width: 430px;
+        width: 100%;
+        align-self: center;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 870px) {
+    .header__title {
+        font-size: 37px;
+    }
+
+    .header__woodhand {
+        max-width: 450px;
+        max-height: 418px;
+        bottom: 56px;
+        right: -180px;
+    }
+
+    .header__top-button img {
+        display: none;
+    }
+
+    .title__text {
+        font-size: 44px;
+    }
+
+    .ask__link {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 800px) {
+    .header__top-inner {
+        gap: 5px;
+    }
+
+    .header__login-button {
+        margin-right: 5px;
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+
+    .header__language {
+        display: none;
+    }
+
+    .header__open-acc {
+        flex-shrink: 1;
+        padding: 10px;
+    }
+
+    .header__woodhand {
+        display: none;
+    }
+
+    .bonus__bonus {
+        position: absolute;
+        top: -90px;
+        right: 0;
+
+    }
+
+    .portfel__right-button {
+        max-width: 338px;
+        height: 86px;
+        font-size: 20px;
+        line-height: 159%;
+    }
+
+    .mobinvest__bottom {
+        margin-bottom: 57px;
+    }
+
+    .main__mobinvest {
+        padding-bottom: 75px;
+    }
+}
+
+@media (max-width: 700px) {
+    .tools__support {
+        bottom: none;
+        top: -71px;
+        border-radius: 7px 7px 0px 7px;
+    }
+
+    .tools__content-list {
+        grid-template: 1fr 1fr 1fr / minmax(160px, 1fr) minmax(160px, 1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 5px;
+    }
+
+    .tools__content {
+        padding: 15px 0;
+    }
+
+    .tools__title {
+        font-size: 60px;
+    }
+
+    .manual__list {
+        grid-template: auto auto auto / auto;
+        grid-row-gap: 70px;
+
+    }
+
+    .manual__list>:first-child {
+        grid-area: auto;
+        justify-self: center;
+    }
+
+    .manual__list>:nth-child(2) {
+        grid-area: auto;
+        justify-self: center;
+        flex-shrink: 0;
+    }
+
+    .manual__list>:nth-child(3) {
+        grid-area: auto;
+        justify-self: center;
+        width: auto;
+        height: auto;
+    }
+
+    .manual__list-img {
+        position: absolute;
+        right: -270px;
+        top: -20px;
+        width: 80px;
+        height: 100px;
+    }
+
+    .manual__list-img-two {
+        top: -50px;
+        right: -270px;
+    }
+
+    .manual__list-img-three {
+        top: -20px;
+        right: -270px;
+    }
+
+    .manual__list-title {
+        height: auto;
+    }
+
+    .maual__title-text {
+        font-size: 50px;
+    }
+
+    .manual__title p {
+        font-size: 20px;
+    }
+
+    .advantages__list {
+        display: grid;
+        grid-template: repeat(8, auto)/ repeat(1, auto);
+        gap: 9px;
+    }
+
+    .portfel__info {
+        grid-template: repeat(3, auto) / 1fr;
+        gap: 30px;
+    }
+
+    .portfel__punktik:first-child {
+        grid-area: auto;
+        justify-self: auto;
+    }
+
+    .portfel__punktik:nth-child(2) {
+        grid-area: auto;
+        justify-self: auto;
+    }
+
+    .portfel__punktik:last-child {
+        grid-area: auto;
+    }
+
+    .mobinvest__text {
+        font-size: 19px;
+    }
+
+    .mobinvest__title {
+        font-size: 57px;
+    }
+
+    .application__form {
+        display: grid;
+        grid-template: repeat(4, 1fr) / auto;
+        gap: 20px;
+    }
+
+    .application__list {
+        margin-bottom: 50px;
+    }
+
+    .application__form {
+        display: grid;
+        grid-template: repeat(4, 1fr) / auto;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding-bottom: 0px;
+    }
+
+    .header__open-acc {
+        /* order: -1; */
+        padding: 10px;
+        font-size: 11px;
+        color: #000;
+        height: 41px;
+    }
+
+    .header__buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__login-button {
+        /* flex-shrink: 1; */
+        font-size: 12px;
+        height: 30px;
+
+    }
+
+    .logo {
+        width: 100px;
+        height: 100%;
+        margin-right: 0;
+        flex-shrink: 0;
+    }
+
+    .logo img:first-child {
+        display: none;
+    }
+
+    .logo img:last-child {
+        display: block;
+        width: 100%;
+    }
+
+    .header__raffle-title {
+        font-size: 17px;
+    }
+
+    .header__raffle-subtitle {
+        font-size: 13px;
+    }
+
+    .header__woodhand--mob {
+        max-width: 550px;
+        height: 518px;
+        width: 100%;
+        margin-top: -70px;
+    }
+
+    .header__woodhand {
+        display: block;
+    }
+
+    .header__investers {
+        max-width: 336px;
+        font-size: 15px;
+        line-height: 110%;
+    }
+
+    .header__buttons-two {
+        margin-bottom: 15px;
+    }
+
+    .header__top-button {
+        font-size: 16px;
+    }
+
+    .get__catalog-text span {
+        display: inline-block;
+    }
+
+    .tools__list-title {
+        font-weight: 500;
+        font-size: 18px;
+
+    }
+
+    .tools__title {
+        font-size: 50px;
+    }
+
+    .bonus__present {
+        display: none;
+    }
+
+    .bonus__title {
+        font-size: 10vw;
+    }
+
+    .bonus__text {
+        font-size: 4vw;
+    }
+
+    .bonus__bonus {
+        top: -80px;
+    }
+
+    .bonus__cirlce {
+        max-width: 233px;
+        max-height: 233px;
+    }
+
+    .bonus__button {
+        font-size: 18px;
+    }
+
+    .bonus__button-demo {
+        font-size: 18px;
+    }
+
+    .advantages__title {
+        font-size: 37px;
+    }
+
+    .portfel__low-risk {
+        margin-top: -20px;
+    }
+
+    .partfel__profit-percent {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+
+    .partfel__profit {
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .portfel__load {
+        position: relative;
+        width: 312px;
+        height: 11px;
+        background: #303030;
+        margin-bottom: 38px;
+    }
+
+    .portfel__right-title {
+        font-size: 49px;
+    }
+
+    .portfel__right-text {
+        font-size: 19px;
+    }
+
+    .portfel__right-title {
+        font-size: 10vw;
+    }
+
+    .portfel__right-text {
+        font-size: 16px;
+    }
+
+    .portfel__count {
+        font-size: 13vw;
+    }
+
+    .portfel__punktik p {
+        font-size: 6vw;
+    }
+
+    .mobinvest__list {
+        grid-template: repeat(4, 1fr) / 1fr;
+    }
+
+    .application__title {
+        font-size: 55px;
+    }
+
+    .main__ask {
+        padding-bottom: 58px;
+    }
+
+    .application__input-name {
+        height: 86px;
+    }
+
+}
+
+@media(max-width: 460px) {
+    .tools__title {
+        font-size: 38px;
+    }
+
+    .bonus__bonus {
+        top: -60px;
+    }
+
+    .bonus__present-two {
+        display: none;
+    }
+
+    .portfel__switch {
+        font-size: 20px;
+        line-height: 157%;
+    }
+
+    .mobinvest__text {
+        font-size: 5vw;
+    }
+
+    .mobinvest__title {
+        font-size: 10vw;
+    }
+
+    .footer__button {
+        font-size: 17px;
+    }
+
+    .footer__left-block {
+        gap: 27px;
+    }
+}

@@ -10,9 +10,9 @@ let isStudent = true;
 // 1. Объявите переменную age с числовым значением возраста студента.
 // 2. Объявите переменную currentYear и присвойте ей значение текущего года (например, 2025).
 // 3. Используя age и currentYear вычислите год рождения студента, запишите результат в переменную birthYear.
-age = 18; 
-currentYear = 2025;
-birthYear = age - currentYear;
+let age = 18; 
+let currentYear = 2025;
+let birthYear = age - currentYear;
 
 // Задача 3.
 // Выведите в консоли сообщение в таком формате:

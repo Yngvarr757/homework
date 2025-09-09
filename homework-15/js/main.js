@@ -44,25 +44,47 @@ const deleteTodoById = (todos, todoId) => {
   return todos;
 };
 
-// При помощи метода querySelector получаем элементы .form, .input и .todos
 const form = document.querySelector(".form");
 const input = document.querySelector(".input");
 const todosList = document.querySelector(".todos");
-// Создаем функцию createTodoElement(text), которая будет создавать todo в виде разметки
-const createTodoElement = (text) => {
-  const todo = document.createElement("li");
-  todo.classList.add("todo");
-  todo.innerHTML = `
-              <div class="todo-text">${text}</div>
+
+const createTodoElement = (todo) => {
+  const todoElement = document.createElement("li");
+  todoElement.dataset.id = todo[todoKeys.id];
+  todoElement.classList.add("todo");
+  todoElement.innerHTML = `
+              <div class="todo-text">${todo[todoKeys.text]}</div>
           <div class="todo-actions">
             <button class="button-complete button">&#10004;</button>
             <button class="button-delete button">&#10006;</button>
     `;
-  todosList.append(todo);
+  todosList.prepend(todoElement);
 };
-
-// Создаем функцию handleCreateTodo(todos, text), которая будет вызывать createTodo и createTodoElement
 const handleCreateTodo = (todos, text) => {
-  createTodo(todos, text);
-  createTodoElement(text);
+  const newToDo = createTodo(todos, text);
+  createTodoElement(newToDo);
 };
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const text = input.value.trim();
+  // НЕ ОБЯЗАТЕЛЬНО ПИСАТЬ text == "", можно !text потому что пустая строка вернет false
+  if (!text) {
+    input.value = "";
+    return;
+  }
+  handleCreateTodo(todos, text);
+  input.value = "";
+});
+
+todosList.addEventListener("click", (e) => {
+  const todo = e.target.closest(".todo");
+  if (!todo) return;
+  if (e.target.matches(".button-complete")) {
+    completeTodoById(todos, Number(todo.dataset.id));
+    todo.classList.add("completed");
+  }
+  if (e.target.matches(".button-delete")) {
+    deleteTodoById(todos, Number(todo.dataset.id));
+    todo.remove();
+  }
+});
